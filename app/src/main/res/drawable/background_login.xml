@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- angle必须是45的整数倍  startColor以左下角为起点-->
+    <gradient
+        android:startColor="#FFFFC125"
+        android:endColor="#FF99CCFF"
+        android:angle="90"/>
+
+</shape>

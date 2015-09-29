@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".LoginActivity"
+                android:background="@drawable/background_login">
+
+    <TextView
+        android:id="@+id/imageLOGO1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fzu"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="60sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/imageLOGO2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="成绩查询"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_below="@id/imageLOGO1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_login_input"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_below="@id/imageLOGO2">
+
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user"/>
+
+        <EditText
+            android:id="@+id/user_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user"
+            android:inputType="number"
+            android:hint="@string/user_hint"/>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_input"
+            android:text="@string/password"
+            />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_input"
+            android:text="@string/login_remember"/>
+
+        <CheckBox
+            android:id="@+id/auto_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox"
+            android:text="@string/auto_login"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/auto_login"
+            android:text="@string/login"
+            android:background="@drawable/background_button"/>
+
+        <Button
+            android:id="@+id/login_outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_outline"
+            android:background="@drawable/background_button"/>
+    </RelativeLayout>
+
+    <!--这里为注释块，用于前期显示暂时获取的信息
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login"
+                    android:text=""
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+        </ScrollView>
+    -->
+
+</RelativeLayout>
