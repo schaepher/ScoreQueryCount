@@ -19,11 +19,6 @@
     <string name="show_point">学期绩点：</string>
     <string name="get_html">获取数据中……</string>
     <string name="parse_html">更新数据库中……</string>
-    <string name="s201301">大一上</string>
-    <string name="s201302">大一下</string>
-    <string name="s201401">大二上</string>
-    <string name="s201402">大二下</string>
-    <string name="s201501">大三上</string>
     <string name="login_remember">记住账号密码</string>
     <string name="auto_login">自动登录</string>
     <string name="logout">注销</string>
